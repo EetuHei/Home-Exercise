@@ -44,7 +44,7 @@ abstract class Person {
     }
     //Prints out name, birth year and age.
     //This can be used as "parent" for other files
-    public function print()
+    public function print_out()
     {
         echo "Name: ".$this->firstName." ".$this->lastName;
         echo "<br> Birth year: ".$this->yearOfBirth;

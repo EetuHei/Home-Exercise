@@ -20,9 +20,9 @@ class Staff extends Person
     }
 
     //Printing function includes parent print() from person.php and after prints vacancy.    
-    public function print()
+    public function print_out()
     {
-        return parent::print()."<br> Vacancy: ".$this->vacancy;
+        return parent::print_out()."<br> Vacancy: ".$this->vacancy;
     }
 }
 ?>

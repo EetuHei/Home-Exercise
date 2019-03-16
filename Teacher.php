@@ -31,14 +31,14 @@ class Teacher extends Person
     }
 
     //Printing function includes parent print() from person.php and after prints subjects and department.    
-    public function print()
+    public function print_out()
     {
         //Array loop for subjects.
         $subjectsArr ="";
         foreach ($this->subjects as $subjects) {
             $subjectsArr .= $subjects."";
         }
-        return parent::print(). "<br>Courses: ".$subjectsArr."<br>Study Credits: ".$this->department; 
+        return parent::print_out(). "<br>Courses: ".$subjectsArr."<br>Study Credits: ".$this->department; 
     }
 }
 ?>

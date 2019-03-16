@@ -30,14 +30,14 @@ class Student extends Person {
         $this->studyCredits = $studyCredits;
     }
     //Printing function includes parent print() from person.php and after prints courses and study credits.
-    public function print()
+    public function print_out()
     {
         //Array loop for courses.
         $coursesArr ="";
         foreach ($this->courses as $courses) {
             $coursesArr .= $courses."";
         }
-        return parent::print(). "<br>Courses: ".$coursesArr."<br>Study Credits: ".$this->studyCredits; 
+        return parent::print_out(). "<br>Courses: ".$coursesArr."<br>Study Credits: ".$this->studyCredits; 
     }
 
 }
